@@ -1,2 +1,0 @@
-class BigMacController < ApplicationController
-end
