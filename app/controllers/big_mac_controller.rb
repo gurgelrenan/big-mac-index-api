@@ -1,0 +1,2 @@
+class BigMacController < ApplicationController
+end
