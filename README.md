@@ -4,4 +4,5 @@
 # Big Mac Index API
 
 Based on: https://www.economist.com/news/2020/01/15/the-big-mac-index
+
 Data from: https://github.com/TheEconomist/big-mac-data
