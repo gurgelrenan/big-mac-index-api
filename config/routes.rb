@@ -8,6 +8,6 @@ Rails.application.routes.draw do
       end
     end
   end
-
-  root 'big_macs#index'
+  
+  root 'api/v1/big_macs#index'
 end
