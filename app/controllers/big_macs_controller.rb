@@ -1,5 +1,7 @@
 class BigMacsController < ApplicationController
   def index
-    render json: { msg: 'success!' }.to_json, status: :ok
+    indexes = BigMacIndex.all
+
+    render json: indexes.to_json, status: :ok
   end
 end
