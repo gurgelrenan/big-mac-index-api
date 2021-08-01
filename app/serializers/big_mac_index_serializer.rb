@@ -26,7 +26,7 @@
 #  updated_at    :datetime         not null
 #
 class BigMacIndexSerializer
-  include FastJsonapi::ObjectSerializer
+  include JSONAPI::Serializer
   attributes :date, :iso_a3, :currency_code, :name, :local_price, 
              :dollar_ex, :dollar_price, :USD_raw, :EUR_raw, :GBP_raw, 
              :JPY_raw, :CNY_raw, :GDP_dollar, :adj_price, :USD_adjusted,
