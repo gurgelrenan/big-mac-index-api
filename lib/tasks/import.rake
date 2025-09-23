@@ -3,12 +3,15 @@ require 'open-uri'
 
 namespace :import do
   task run: :environment do
-    data = open('https://raw.githubusercontent.com/TheEconomist/big-mac-data/master/output-data/big-mac-full-index.csv')
+    data = URI.open('https://raw.githubusercontent.com/TheEconomist/big-mac-data/master/output-data/big-mac-full-index.csv')
     imported = 0
 
     CSV.foreach(data, headers: true) do |row|
       index = BigMacIndex.where(date: row['date'], iso_a3: row['iso_a3']).first_or_initialize
-      index.assign_attributes(row.to_hash)
+
+      # Only assign attributes that exist in the model
+      valid_attributes = row.to_hash.slice(*BigMacIndex.column_names)
+      index.assign_attributes(valid_attributes)
       
       if index.save
         imported += 1
