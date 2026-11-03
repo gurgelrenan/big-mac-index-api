@@ -5,7 +5,7 @@ ruby '3.4.4'
 
 gem 'rails', '~> 8.1.0'
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'puma', '~> 6.0'
+gem 'puma', '~> 7.2.1'
 gem 'bootsnap', '>= 1.16.0', require: false
 gem 'jsonapi-serializer'
 gem 'csv'

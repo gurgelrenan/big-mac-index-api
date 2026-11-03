@@ -143,7 +143,7 @@ GEM
     minitest (6.0.6)
       drb (~> 2.0)
       prism (~> 1.5)
-    msgpack (1.8.0)
+    msgpack (1.8.7)
     net-imap (0.6.8)
       date
       net-protocol
@@ -187,7 +187,7 @@ GEM
     pry-byebug (3.11.0)
       byebug (~> 12.0)
       pry (>= 0.13, < 0.16)
-    puma (6.6.1)
+    puma (7.2.1)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.8)
@@ -306,7 +306,7 @@ DEPENDENCIES
   listen (~> 3.9)
   pg (>= 0.18, < 2.0)
   pry-byebug
-  puma (~> 6.0)
+  puma (~> 7.2.1)
   rails (~> 8.1.0)
   rspec-rails (~> 7.0)
   simplecov
