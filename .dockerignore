@@ -1,0 +1,11 @@
+/.git
+/.bundle
+/.kamal
+/.env*
+/config/master.key
+/config/credentials/*.key
+/log/*
+/tmp/*
+/storage/*
+/coverage
+/.ruby-lsp

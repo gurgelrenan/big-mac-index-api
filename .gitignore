@@ -23,3 +23,8 @@
 /config/master.key
 .env
 coverage/
+# Deployment secrets
+/.kamal/secrets
+/.kamal/secrets.*
+!/.kamal/secrets.example
+/.env.*

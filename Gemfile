@@ -21,6 +21,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'kamal', '~> 2.12'
   gem 'bundler-audit', require: false
   gem 'listen', '~> 3.9'
   gem 'spring'

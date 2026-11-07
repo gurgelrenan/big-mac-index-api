@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+if [ "${1:-}" = "bundle" ] && [ "${2:-}" = "exec" ] && [ "${3:-}" = "puma" ]; then
+  bundle exec rails db:prepare
+fi
+exec "$@"

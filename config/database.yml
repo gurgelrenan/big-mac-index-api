@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  host: <%= ENV.fetch("DATABASE_HOST", "localhost") %>
   database: big_mac_index_api_production
   username: big_mac_index_api
   password: <%= ENV['BIG_MAC_INDEX_API_DATABASE_PASSWORD'] %>
